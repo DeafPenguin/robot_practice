@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-22T16:20:45.409466" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Bdd" source="H:\Projects\robot_practice\test_bdd.robot">
+<test id="s1-t1" name="Test Automation Practice using Robot Framework" line="7">
+<kw name="Open in Chrome Browser" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-22T16:20:45.755046" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${address}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-22T16:20:45.754045" elapsed="4.748392"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-22T16:20:50.502437" elapsed="0.035034"/>
+</kw>
+<arg>${url}</arg>
+<status status="PASS" start="2024-07-22T16:20:45.753044" elapsed="4.785427"/>
+</kw>
+<kw name="Page Should Contain Element" owner="keywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-22T16:20:50.570536" level="INFO">Element 'css:#header-inner' is displayed.</msg>
+<arg>${element}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-22T16:20:50.538989" elapsed="0.031547"/>
+</kw>
+<arg>${header}</arg>
+<status status="PASS" start="2024-07-22T16:20:50.538989" elapsed="0.034547"/>
+</kw>
+<kw name="Fill TAP Form" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-22T16:20:50.575535" level="INFO">Typing text 'Victor' into text field 'css:#name'.</msg>
+<arg>${nameInput}</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T16:20:50.574535" elapsed="0.137824"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-22T16:20:50.713359" level="INFO">Typing text 'victormurilo@gmail.com' into text field 'css:#email'.</msg>
+<arg>${emailInput}</arg>
+<arg>${userEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T16:20:50.712359" elapsed="0.114613"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-22T16:20:50.826972" level="INFO">Typing text '62000000000' into text field 'css:#phone'.</msg>
+<arg>${phoneInput}</arg>
+<arg>${userPhone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T16:20:50.826972" elapsed="0.094104"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-22T16:20:50.921076" level="INFO">Typing text 'Testando campo de escrita' into text field 'css:#textarea'.</msg>
+<arg>${addressInput}</arg>
+<arg>${userAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-22T16:20:50.921076" elapsed="0.096692"/>
+</kw>
+<arg>Victor</arg>
+<arg>victormurilo@gmail.com</arg>
+<arg>62000000000</arg>
+<arg>Testando campo de escrita</arg>
+<status status="PASS" start="2024-07-22T16:20:50.574535" elapsed="0.444233"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-22T16:20:51.018768" elapsed="2.743085"/>
+</kw>
+<status status="PASS" start="2024-07-22T16:20:45.753044" elapsed="8.008809"/>
+</test>
+<status status="PASS" start="2024-07-22T16:20:45.418467" elapsed="8.344385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Bdd">Test Bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
