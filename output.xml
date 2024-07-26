@@ -1,74 +1,1284 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-22T16:20:45.409466" rpa="false" schemaversion="5">
-<suite id="s1" name="Test Bdd" source="H:\Projects\robot_practice\test_bdd.robot">
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-26T14:33:24.949464" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Bdd" source="/home/victor-machado/Projects/robot_practice/test_bdd.robot">
 <test id="s1-t1" name="Test Automation Practice using Robot Framework" line="7">
-<kw name="Open in Chrome Browser" owner="keywords">
+<kw name="Open in Chrome Browser" owner="commonKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-22T16:20:45.755046" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2024-07-26T14:33:25.059655" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>${address}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-22T16:20:45.754045" elapsed="4.748392"/>
+<status status="PASS" start="2024-07-26T14:33:25.059343" elapsed="4.942987"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-22T16:20:50.502437" elapsed="0.035034"/>
+<status status="PASS" start="2024-07-26T14:33:30.002674" elapsed="0.016988"/>
 </kw>
 <arg>${url}</arg>
-<status status="PASS" start="2024-07-22T16:20:45.753044" elapsed="4.785427"/>
+<status status="PASS" start="2024-07-26T14:33:25.058701" elapsed="4.961405"/>
 </kw>
-<kw name="Page Should Contain Element" owner="keywords">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-22T16:20:50.570536" level="INFO">Element 'css:#header-inner' is displayed.</msg>
-<arg>${element}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-22T16:20:50.538989" elapsed="0.031547"/>
-</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.033611" level="INFO">Current page contains element 'id:header-inner'.</msg>
 <arg>${header}</arg>
-<status status="PASS" start="2024-07-22T16:20:50.538989" elapsed="0.034547"/>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.020514" elapsed="0.013632"/>
 </kw>
-<kw name="Fill TAP Form" owner="keywords">
+<kw name="Fill TAP Form" owner="testAutomationPractice">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-22T16:20:50.575535" level="INFO">Typing text 'Victor' into text field 'css:#name'.</msg>
+<msg time="2024-07-26T14:33:30.035580" level="INFO">Typing text 'Victor' into text field 'id:name'.</msg>
 <arg>${nameInput}</arg>
 <arg>${userName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-22T16:20:50.574535" elapsed="0.137824"/>
+<status status="PASS" start="2024-07-26T14:33:30.035217" elapsed="0.069551"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-22T16:20:50.713359" level="INFO">Typing text 'victormurilo@gmail.com' into text field 'css:#email'.</msg>
+<msg time="2024-07-26T14:33:30.105410" level="INFO">Typing text 'victormurilo@gmail.com' into text field 'id:email'.</msg>
 <arg>${emailInput}</arg>
 <arg>${userEmail}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-22T16:20:50.712359" elapsed="0.114613"/>
+<status status="PASS" start="2024-07-26T14:33:30.105068" elapsed="0.058695"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-22T16:20:50.826972" level="INFO">Typing text '62000000000' into text field 'css:#phone'.</msg>
+<msg time="2024-07-26T14:33:30.164542" level="INFO">Typing text '62000000000' into text field 'id:phone'.</msg>
 <arg>${phoneInput}</arg>
 <arg>${userPhone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-22T16:20:50.826972" elapsed="0.094104"/>
+<status status="PASS" start="2024-07-26T14:33:30.164087" elapsed="0.050502"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-22T16:20:50.921076" level="INFO">Typing text 'Testando campo de escrita' into text field 'css:#textarea'.</msg>
+<msg time="2024-07-26T14:33:30.215238" level="INFO">Typing text 'Testando campo de escrita' into text field 'id:textarea'.</msg>
 <arg>${addressInput}</arg>
 <arg>${userAddress}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-22T16:20:50.921076" elapsed="0.096692"/>
+<status status="PASS" start="2024-07-26T14:33:30.214883" elapsed="0.049483"/>
 </kw>
 <arg>Victor</arg>
 <arg>victormurilo@gmail.com</arg>
 <arg>62000000000</arg>
 <arg>Testando campo de escrita</arg>
-<status status="PASS" start="2024-07-22T16:20:50.574535" elapsed="0.444233"/>
+<status status="PASS" start="2024-07-26T14:33:30.034726" elapsed="0.229897"/>
+</kw>
+<kw name="Select Female Gender on Form" owner="testAutomationPractice">
+<kw name="Select Gender on Form" owner="testAutomationPractice">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.266094" level="INFO">Clicking element 'id:female'.</msg>
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.265835" elapsed="0.038384"/>
+</kw>
+<arg>${femaleGenderRadioButton}</arg>
+<status status="PASS" start="2024-07-26T14:33:30.265443" elapsed="0.039010"/>
+</kw>
+<status status="PASS" start="2024-07-26T14:33:30.265009" elapsed="0.039579"/>
+</kw>
+<kw name="Select Day of List" owner="testAutomationPractice">
+<kw name="Select Element On List By Text" owner="commonKeywords">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.345112" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${listLocator}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.306374" elapsed="0.039021"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.366216" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.346289" elapsed="0.020122"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.366653" elapsed="0.000323"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.367145" elapsed="0.000299"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.346010" elapsed="0.021526"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.374084" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.367833" elapsed="0.006448"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.375844" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.375329" elapsed="0.027787"/>
+</kw>
+<arg>'${elementText}' == '${targetText}'</arg>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.374665" elapsed="0.028649"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.403836" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${targetText}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.403492" elapsed="0.000504"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.367692" elapsed="0.036393"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.345623" elapsed="0.058545"/>
+</for>
+<arg>${daysList}</arg>
+<arg>${day}</arg>
+<status status="PASS" start="2024-07-26T14:33:30.305743" elapsed="0.098543"/>
+</kw>
+<arg>Monday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.305028" elapsed="0.099345"/>
+</kw>
+<kw name="Select Day of List" owner="testAutomationPractice">
+<kw name="Select Element On List By Text" owner="commonKeywords">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.412109" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${listLocator}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.405477" elapsed="0.006884"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.419918" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.412960" elapsed="0.007132"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.420311" elapsed="0.000289"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.420762" elapsed="0.000274"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.412771" elapsed="0.008351"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.427776" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.421399" elapsed="0.006560"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.428215" elapsed="0.000318"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.428763" elapsed="0.000322"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.421273" elapsed="0.007911"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.435724" level="INFO">${elementText} = Tuesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.429505" elapsed="0.006404"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.436137" elapsed="0.000308"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${targetText}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.436619" elapsed="0.000273"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.73")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.429354" elapsed="0.007627"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.444058" level="INFO">${elementText} = Wednesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.437288" elapsed="0.006961"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.445136" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.74")&gt;'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.444873" elapsed="0.021273"/>
+</kw>
+<arg>'${elementText}' == '${targetText}'</arg>
+<arg>Click Element</arg>
+<arg>${element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.444485" elapsed="0.021895"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.466996" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${targetText}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.466606" elapsed="0.000544"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.74")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.437142" elapsed="0.030098"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.412531" elapsed="0.054790"/>
+</for>
+<arg>${daysList}</arg>
+<arg>${day}</arg>
+<status status="PASS" start="2024-07-26T14:33:30.405030" elapsed="0.062398"/>
+</kw>
+<arg>Wednesday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.404641" elapsed="0.062874"/>
+</kw>
+<kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.474925" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${daysList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.468265" elapsed="0.006848"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.481690" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.475695" elapsed="0.006176"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.482470" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Sunday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.482101" elapsed="0.000477"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.483293" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Sunday']/preceding-sibling::input' is not selected.</msg>
+<arg>${inputElement}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.483064" elapsed="0.020933"/>
+</kw>
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.482756" elapsed="0.021438"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.504940" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.504528" elapsed="0.000586"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.475516" elapsed="0.029709"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.475261" elapsed="0.030056"/>
+</for>
+<arg>Sunday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.467887" elapsed="0.037548"/>
+</kw>
+<kw name="Validate Day of List is Checked" owner="testAutomationPractice">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.512123" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${daysList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.506318" elapsed="0.005982"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.518935" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.512857" elapsed="0.006247"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.519642" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.519315" elapsed="0.000427"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.519897" elapsed="0.000227"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.520264" elapsed="0.000247"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.512675" elapsed="0.007916"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.527311" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.520883" elapsed="0.006595"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.528012" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.527687" elapsed="0.000420"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.528997" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input' is selected.</msg>
+<arg>${inputElement}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.528689" elapsed="0.043517"/>
+</kw>
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.528280" elapsed="0.044220"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.573294" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.572764" elapsed="0.000794"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.520743" elapsed="0.052955"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.512443" elapsed="0.061377"/>
+</for>
+<arg>Monday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.505918" elapsed="0.068054"/>
+</kw>
+<kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.583468" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${daysList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.574969" elapsed="0.008753"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.593364" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.584496" elapsed="0.009054"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.594178" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.593786" elapsed="0.000553"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.594598" elapsed="0.000362"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.595138" elapsed="0.000315"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.584257" elapsed="0.011285"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.604756" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.596058" elapsed="0.008998"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.605995" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.605421" elapsed="0.000750"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.606466" elapsed="0.000409"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.607137" elapsed="0.000415"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.595865" elapsed="0.011817"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.618481" level="INFO">${elementText} = Tuesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.608145" elapsed="0.010517"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.619220" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.618879" elapsed="0.000490"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.620081" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input' is not selected.</msg>
+<arg>${inputElement}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.619850" elapsed="0.016683"/>
+</kw>
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.619546" elapsed="0.017192"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.637346" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.636992" elapsed="0.000500"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.73")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.607923" elapsed="0.029658"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.583931" elapsed="0.053732"/>
+</for>
+<arg>Tuesday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.574400" elapsed="0.063367"/>
+</kw>
+<kw name="Validate Day of List is Checked" owner="testAutomationPractice">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.644181" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${daysList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.638345" elapsed="0.006012"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.651353" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.644962" elapsed="0.006635"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.652194" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.651855" elapsed="0.000441"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.652455" elapsed="0.000224"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.652832" elapsed="0.000245"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.644736" elapsed="0.008420"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.659596" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.653436" elapsed="0.006327"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.660293" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.659972" elapsed="0.000410"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.660539" elapsed="0.000229"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.660921" elapsed="0.000244"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.653309" elapsed="0.007934"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.668051" level="INFO">${elementText} = Tuesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.661659" elapsed="0.006572"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.668799" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.668446" elapsed="0.000453"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.669062" elapsed="0.000232"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.669437" elapsed="0.000251"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.73")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.661500" elapsed="0.008273"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.675907" level="INFO">${elementText} = Wednesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.670053" elapsed="0.006023"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.676628" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.676292" elapsed="0.000429"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.677400" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input' is selected.</msg>
+<arg>${inputElement}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.677177" elapsed="0.015746"/>
+</kw>
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.676897" elapsed="0.016309"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.693971" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.693475" elapsed="0.000712"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.74")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.669926" elapsed="0.024392"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.644502" elapsed="0.049943"/>
+</for>
+<arg>Wednesday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.638051" elapsed="0.056558"/>
+</kw>
+<kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.702379" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${daysList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.695560" elapsed="0.006998"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.708944" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.703123" elapsed="0.006024"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.709707" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.709384" elapsed="0.000422"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.709958" elapsed="0.000221"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.710313" elapsed="0.000239"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.702938" elapsed="0.007691"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.717048" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.710901" elapsed="0.006363"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.718008" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.717614" elapsed="0.000525"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.718367" elapsed="0.000286"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.718804" elapsed="0.000336"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.710779" elapsed="0.008471"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.734509" level="INFO">${elementText} = Tuesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.719686" elapsed="0.015085"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.736027" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.735484" elapsed="0.000721"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.736485" elapsed="0.000406"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.737141" elapsed="0.000415"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.73")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.719535" elapsed="0.018152"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.750138" level="INFO">${elementText} = Wednesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.738120" elapsed="0.012308"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.751343" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.750775" elapsed="0.001074"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.752201" elapsed="0.000429"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.752912" elapsed="0.000421"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.74")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.737921" elapsed="0.015540"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.766499" level="INFO">${elementText} = Thursday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.753933" elapsed="0.012861"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.767601" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.767105" elapsed="0.000643"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.769159" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input' is not selected.</msg>
+<arg>${inputElement}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.768772" elapsed="0.024421"/>
+</kw>
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.767998" elapsed="0.025407"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.793964" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.793597" elapsed="0.000542"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.75")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.753705" elapsed="0.040560"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.702702" elapsed="0.091657"/>
+</for>
+<arg>Thursday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.695070" elapsed="0.099409"/>
+</kw>
+<kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.805571" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${daysList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.795496" elapsed="0.010262"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.815622" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.806325" elapsed="0.009473"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.816482" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.816059" elapsed="0.000597"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.816958" elapsed="0.000404"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.817610" elapsed="0.000354"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.806153" elapsed="0.011898"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.825804" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.818545" elapsed="0.007437"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.826559" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.826200" elapsed="0.000462"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.826844" elapsed="0.000232"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.827243" elapsed="0.000267"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.818387" elapsed="0.009207"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.834350" level="INFO">${elementText} = Tuesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.827879" elapsed="0.006641"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.835139" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.834736" elapsed="0.000543"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.835452" elapsed="0.000230"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.835819" elapsed="0.000238"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.73")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.827750" elapsed="0.008383"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.842701" level="INFO">${elementText} = Wednesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.836409" elapsed="0.006471"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.843444" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.843099" elapsed="0.000444"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.843717" elapsed="0.000244"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.844152" elapsed="0.000287"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.74")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.836286" elapsed="0.008242"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.851509" level="INFO">${elementText} = Thursday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.844953" elapsed="0.006754"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.852264" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.851931" elapsed="0.000429"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.852520" elapsed="0.000224"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.852904" elapsed="0.000246"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.75")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.844730" elapsed="0.008500"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.859890" level="INFO">${elementText} = Friday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.853540" elapsed="0.006536"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.860711" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.860296" elapsed="0.000562"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.861814" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input' is not selected.</msg>
+<arg>${inputElement}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.861444" elapsed="0.017749"/>
+</kw>
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.861055" elapsed="0.018340"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.880107" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.879697" elapsed="0.000582"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.76")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.853380" elapsed="0.027016"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.805909" elapsed="0.074587"/>
+</for>
+<arg>Friday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.794916" elapsed="0.085697"/>
+</kw>
+<kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.886835" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>${daysList}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.881247" elapsed="0.005756"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.893727" level="INFO">${elementText} = Sunday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.887531" elapsed="0.006379"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.894487" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.894140" elapsed="0.000455"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.894760" elapsed="0.000225"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.895129" elapsed="0.000241"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.71")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.887364" elapsed="0.008084"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.902974" level="INFO">${elementText} = Monday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.895716" elapsed="0.007432"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.903692" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.903368" elapsed="0.000412"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.903937" elapsed="0.000369"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.904460" elapsed="0.000243"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.72")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.895595" elapsed="0.009199"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.910945" level="INFO">${elementText} = Tuesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.905071" elapsed="0.006056"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.911710" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.911352" elapsed="0.000477"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.911997" elapsed="0.000230"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.912370" elapsed="0.000243"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.73")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.904948" elapsed="0.007743"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.931160" level="INFO">${elementText} = Wednesday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.913003" elapsed="0.018420"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.932271" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.931749" elapsed="0.000699"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.932767" elapsed="0.000373"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.933363" elapsed="0.000385"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.74")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.912869" elapsed="0.021965"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.944995" level="INFO">${elementText} = Thursday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.935499" elapsed="0.009709"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.946030" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.945502" elapsed="0.000673"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.946428" elapsed="0.000272"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.946858" elapsed="0.000260"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.75")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.935208" elapsed="0.011997"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.956050" level="INFO">${elementText} = Friday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.947612" elapsed="0.008702"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.957130" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.956637" elapsed="0.000643"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.957538" elapsed="0.000350"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.958104" elapsed="0.000380"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.76")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.947425" elapsed="0.011175"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.971317" level="INFO">${elementText} = Saturday</msg>
+<var>${elementText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.959045" elapsed="0.012554"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-26T14:33:30.972446" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<var>${inputElement}</var>
+<arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.971933" elapsed="0.000669"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-07-26T14:33:30.975920" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input' is not selected.</msg>
+<arg>${inputElement}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.975314" elapsed="0.030888"/>
+</kw>
+<arg>'${elementText}' == '${day}'</arg>
+<arg>Checkbox Should Not Be Selected</arg>
+<arg>${inputElement}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:30.972869" elapsed="0.033692"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-26T14:33:31.007463" level="INFO">Exiting for loop altogether.</msg>
+<arg>'${elementText}' == '${day}'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-26T14:33:31.006882" elapsed="0.000829"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="95c22775a6595a07e8ab158796f10349", element="f.12B66D7D7B5524B913D1F6F9D5C7A346.d.C701439C2DA9270DC7FFD4D02F5421CC.e.77")&gt;</var>
+<status status="PASS" start="2024-07-26T14:33:30.958830" elapsed="0.049026"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-07-26T14:33:30.887140" elapsed="0.120844"/>
+</for>
+<arg>Saturday</arg>
+<status status="PASS" start="2024-07-26T14:33:30.880914" elapsed="0.127246"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-26T14:33:34.009027" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-26T14:33:31.008487" elapsed="3.001055"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-22T16:20:51.018768" elapsed="2.743085"/>
+<status status="PASS" start="2024-07-26T14:33:34.010714" elapsed="0.059568"/>
 </kw>
-<status status="PASS" start="2024-07-22T16:20:45.753044" elapsed="8.008809"/>
+<status status="PASS" start="2024-07-26T14:33:25.058213" elapsed="9.012437"/>
 </test>
-<status status="PASS" start="2024-07-22T16:20:45.418467" elapsed="8.344385"/>
+<status status="PASS" start="2024-07-26T14:33:24.951501" elapsed="9.120030"/>
 </suite>
 <statistics>
 <total>
