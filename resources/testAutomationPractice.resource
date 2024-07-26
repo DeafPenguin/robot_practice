@@ -3,9 +3,14 @@ Library    SeleniumLibrary
 Resource    commonKeywords.resource
 
 *** Variables ***
-### Form locators ###
+### PageUrl ###
 ${url}     https://testautomationpractice.blogspot.com/
+### General Locators ###
 ${header}    id:header-inner
+${daysList}    xpath=//*[contains(@class, 'post-body')]/div[4]/div
+${openCartLink}    css:.post-body > a:nth-child(21)
+${orangeHRMLink}    css:.post-body > a:nth-child(22)
+### Form locators ###
 ${nameInput}    id:name
 ${emailInput}    id:email
 ${phoneInput}    id:phone
@@ -13,9 +18,7 @@ ${addressInput}    id:textarea
 ${maleGenderRadioButton}    id:male
 ${femaleGenderRadioButton}    id:female
 ${countryDropdown}    id:country
-${colors}    id:colors
-### General Locators ###
-${daysList}    xpath=//*[contains(@class, 'post-body')]/div[4]/div
+${colorsList}    id:colors
 
 *** Keywords ***
 Fill TAP Form
@@ -25,15 +28,11 @@ Fill TAP Form
     Input Text    ${phoneInput}    ${userPhone}
     Input Text    ${addressInput}    ${userAddress}
 
-Select Gender on Form
-    [Arguments]    ${gender}
-    Click Element    ${gender}
-
 Select Female Gender on Form
-    Select Gender on Form    ${femaleGenderRadioButton}
+    Click Element    ${femaleGenderRadioButton}
 
 Select Male Gender on Form
-    Select Gender on Form    ${maleGenderRadioButton}
+    Click Element    ${maleGenderRadioButton}
 
 Select Day of List
     [Arguments]    ${day}
@@ -58,3 +57,15 @@ Validate Day of List is Not Checked
         Run Keyword If    '${elementText}' == '${day}'    Checkbox Should Not Be Selected    ${inputElement}
         Exit For Loop If    '${elementText}' == '${day}'
     END
+
+Select Country
+    [Arguments]    ${userCountry}
+    Select From List By Label    ${countryDropdown}    ${userCountry}
+
+Select Color
+    [Arguments]    ${color}
+    Select From List By Label    ${colorsList}    ${color}
+
+Validate Form Links
+    Validate Element Link    ${openCartLink}    https://demo.opencart.com/
+    Validate Element Link    ${orangeHRMLink}    https://opensource-demo.orangehrmlive.com/web/index.php/auth/login

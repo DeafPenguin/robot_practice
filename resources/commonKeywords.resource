@@ -15,3 +15,8 @@ Select Element On List By Text
         Run Keyword If    '${elementText}' == '${targetText}'    Click Element    ${element}
         Exit For Loop If    '${elementText}' == '${targetText}'
     END
+
+Validate Element Link
+    [Arguments]    ${locator}    ${expectedLink}
+    ${link}=    Get Element Attribute    ${locator}    href
+    Should Be Equal As Strings    ${link}    ${expectedLink}
