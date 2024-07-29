@@ -1,7 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    resources/commonKeywords.resource
-Resource    resources/testAutomationPractice.resource
+Resource    ../resources/testAutomationPractice.resource
 
 *** Variables ***
 ${userName}    Victor
@@ -60,6 +59,7 @@ Test Automation Practice using Robot Framework
     Select Color    ${color}
 
     # Select an date on calendar
+    Select Date on Form    ${targetDate}
 
     # Validate Links
     Validate Form Links

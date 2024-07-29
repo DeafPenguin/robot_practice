@@ -1,1343 +1,2395 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-26T15:53:24.205190" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-07-29T15:35:56.551023" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Bdd" source="/home/victor-machado/Projects/robot_practice/test_bdd.robot">
-<test id="s1-t1" name="Test Automation Practice using Robot Framework" line="31">
+<test id="s1-t1" name="Test Automation Practice using Robot Framework" line="30">
 <kw name="Open in Chrome Browser" owner="commonKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:24.326630" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2024-07-29T15:35:56.676657" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>${address}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-26T15:53:24.326393" elapsed="4.713785"/>
+<status status="PASS" start="2024-07-29T15:35:56.676389" elapsed="3.825417"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.040737" elapsed="0.017401"/>
+<status status="PASS" start="2024-07-29T15:36:00.502115" elapsed="0.023449"/>
 </kw>
 <arg>${url}</arg>
-<status status="PASS" start="2024-07-26T15:53:24.325665" elapsed="4.732905"/>
+<status status="PASS" start="2024-07-29T15:35:56.675685" elapsed="3.850331"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.069035" level="INFO">Current page contains element 'id:header-inner'.</msg>
+<msg time="2024-07-29T15:36:00.536729" level="INFO">Current page contains element 'id:header-inner'.</msg>
 <arg>${header}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.059084" elapsed="0.010459"/>
+<status status="PASS" start="2024-07-29T15:36:00.526482" elapsed="0.010670"/>
 </kw>
 <kw name="Fill TAP Form" owner="testAutomationPractice">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.070828" level="INFO">Typing text 'Victor' into text field 'id:name'.</msg>
+<msg time="2024-07-29T15:36:00.539337" level="INFO">Typing text 'Victor' into text field 'id:name'.</msg>
 <arg>${nameInput}</arg>
 <arg>${userName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.070524" elapsed="0.071751"/>
+<status status="PASS" start="2024-07-29T15:36:00.538721" elapsed="0.072066"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.143313" level="INFO">Typing text 'victormurilo@gmail.com' into text field 'id:email'.</msg>
+<msg time="2024-07-29T15:36:00.611417" level="INFO">Typing text 'victormurilo@gmail.com' into text field 'id:email'.</msg>
 <arg>${emailInput}</arg>
 <arg>${userEmail}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.142737" elapsed="0.054787"/>
+<status status="PASS" start="2024-07-29T15:36:00.611077" elapsed="0.060229"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.198149" level="INFO">Typing text '(62)99999-9999' into text field 'id:phone'.</msg>
+<msg time="2024-07-29T15:36:00.671940" level="INFO">Typing text '(62)99999-9999' into text field 'id:phone'.</msg>
 <arg>${phoneInput}</arg>
 <arg>${userPhone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.197815" elapsed="0.051416"/>
+<status status="PASS" start="2024-07-29T15:36:00.671605" elapsed="0.052342"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.249867" level="INFO">Typing text 'Goiania - GO' into text field 'id:textarea'.</msg>
+<msg time="2024-07-29T15:36:00.724575" level="INFO">Typing text 'Goiania - GO' into text field 'id:textarea'.</msg>
 <arg>${addressInput}</arg>
 <arg>${userAddress}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.249524" elapsed="0.045288"/>
+<status status="PASS" start="2024-07-29T15:36:00.724247" elapsed="0.046495"/>
 </kw>
 <arg>${userName}</arg>
 <arg>${userEmail}</arg>
 <arg>${userPhone}</arg>
 <arg>${userAddress}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.069961" elapsed="0.225070"/>
+<status status="PASS" start="2024-07-29T15:36:00.537771" elapsed="0.233198"/>
 </kw>
 <kw name="Select Female Gender on Form" owner="testAutomationPractice">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.295987" level="INFO">Clicking element 'id:female'.</msg>
+<msg time="2024-07-29T15:36:00.772067" level="INFO">Clicking element 'id:female'.</msg>
 <arg>${femaleGenderRadioButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.295716" elapsed="0.038656"/>
+<status status="PASS" start="2024-07-29T15:36:00.771768" elapsed="0.033248"/>
 </kw>
-<status status="PASS" start="2024-07-26T15:53:29.295370" elapsed="0.039213"/>
+<status status="PASS" start="2024-07-29T15:36:00.771373" elapsed="0.033882"/>
 </kw>
 <kw name="Select Day of List" owner="testAutomationPractice">
-<kw name="Select Element On List By Text" owner="commonKeywords">
+<kw name="Select Element On List By Text" owner="lists">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.346102" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:00.815906" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${listLocator}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.335887" elapsed="0.010459"/>
+<status status="PASS" start="2024-07-29T15:36:00.806699" elapsed="0.009521"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.358452" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:00.827930" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.346994" elapsed="0.011655"/>
+<status status="PASS" start="2024-07-29T15:36:00.817016" elapsed="0.011107"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <arg>Click Element</arg>
 <arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.358905" elapsed="0.000362"/>
+<status status="PASS" start="2024-07-29T15:36:00.828374" elapsed="0.000329"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.359453" elapsed="0.000289"/>
+<status status="PASS" start="2024-07-29T15:36:00.828879" elapsed="0.000279"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.346805" elapsed="0.013022"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.816681" elapsed="0.012582"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.366324" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:00.839910" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.360107" elapsed="0.006397"/>
+<status status="PASS" start="2024-07-29T15:36:00.829558" elapsed="0.010688"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.367324" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;'.</msg>
+<msg time="2024-07-29T15:36:00.842045" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.367083" elapsed="0.055054"/>
+<status status="PASS" start="2024-07-29T15:36:00.841565" elapsed="0.043828"/>
 </kw>
 <arg>'${elementText}' == '${targetText}'</arg>
 <arg>Click Element</arg>
 <arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.366725" elapsed="0.055751"/>
+<status status="PASS" start="2024-07-29T15:36:00.840633" elapsed="0.045066"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.423378" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:00.886525" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${targetText}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.422796" elapsed="0.000932"/>
+<status status="PASS" start="2024-07-29T15:36:00.885998" elapsed="0.000777"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.359975" elapsed="0.063952"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.829420" elapsed="0.057492"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.346530" elapsed="0.077540"/>
+<status status="PASS" start="2024-07-29T15:36:00.816380" elapsed="0.070657"/>
 </for>
 <arg>${daysList}</arg>
 <arg>${day}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.335429" elapsed="0.088833"/>
+<status status="PASS" start="2024-07-29T15:36:00.806165" elapsed="0.081038"/>
 </kw>
 <arg>${mondayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.334888" elapsed="0.089512"/>
+<status status="PASS" start="2024-07-29T15:36:00.805594" elapsed="0.081748"/>
 </kw>
 <kw name="Select Day of List" owner="testAutomationPractice">
-<kw name="Select Element On List By Text" owner="commonKeywords">
+<kw name="Select Element On List By Text" owner="lists">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.434806" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:00.896451" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${listLocator}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.427681" elapsed="0.007428"/>
+<status status="PASS" start="2024-07-29T15:36:00.888635" elapsed="0.008104"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.446392" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:00.905976" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.436213" elapsed="0.010483"/>
+<status status="PASS" start="2024-07-29T15:36:00.897776" elapsed="0.008377"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <arg>Click Element</arg>
 <arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.447097" elapsed="0.000528"/>
+<status status="PASS" start="2024-07-29T15:36:00.906392" elapsed="0.000302"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.447951" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-29T15:36:00.906862" elapsed="0.000295"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.435931" elapsed="0.012683"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.897483" elapsed="0.009769"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.461289" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:00.914901" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.449119" elapsed="0.012463"/>
+<status status="PASS" start="2024-07-29T15:36:00.907557" elapsed="0.007596"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <arg>Click Element</arg>
 <arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.461877" elapsed="0.000327"/>
+<status status="PASS" start="2024-07-29T15:36:00.915499" elapsed="0.000427"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.462400" elapsed="0.000323"/>
+<status status="PASS" start="2024-07-29T15:36:00.916168" elapsed="0.000398"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.448884" elapsed="0.013939"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.907404" elapsed="0.009285"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.469065" level="INFO">${elementText} = Tuesday</msg>
+<msg time="2024-07-29T15:36:00.924235" level="INFO">${elementText} = Tuesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.463187" elapsed="0.006060"/>
+<status status="PASS" start="2024-07-29T15:36:00.917140" elapsed="0.007295"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <arg>Click Element</arg>
 <arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.469475" elapsed="0.000280"/>
+<status status="PASS" start="2024-07-29T15:36:00.924682" elapsed="0.000353"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${targetText}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.469916" elapsed="0.000267"/>
+<status status="PASS" start="2024-07-29T15:36:00.925340" elapsed="0.000322"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.73")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.463021" elapsed="0.007249"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.57")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.916921" elapsed="0.008836"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.476502" level="INFO">${elementText} = Wednesday</msg>
+<msg time="2024-07-29T15:36:00.932467" level="INFO">${elementText} = Wednesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.470546" elapsed="0.006146"/>
+<status status="PASS" start="2024-07-29T15:36:00.926073" elapsed="0.006577"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.477542" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.74")&gt;'.</msg>
+<msg time="2024-07-29T15:36:00.933505" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.58")&gt;'.</msg>
 <arg>${element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.477307" elapsed="0.021779"/>
+<status status="PASS" start="2024-07-29T15:36:00.933255" elapsed="0.020329"/>
 </kw>
 <arg>'${elementText}' == '${targetText}'</arg>
 <arg>Click Element</arg>
 <arg>${element}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.476945" elapsed="0.022340"/>
+<status status="PASS" start="2024-07-29T15:36:00.932880" elapsed="0.020913"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.499817" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:00.954360" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${targetText}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.499467" elapsed="0.000503"/>
+<status status="PASS" start="2024-07-29T15:36:00.953985" elapsed="0.000542"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.74")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.470413" elapsed="0.029649"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.58")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.925916" elapsed="0.028706"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.435506" elapsed="0.064636"/>
+<status status="PASS" start="2024-07-29T15:36:00.897076" elapsed="0.057634"/>
 </for>
 <arg>${daysList}</arg>
 <arg>${day}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.427019" elapsed="0.073230"/>
+<status status="PASS" start="2024-07-29T15:36:00.888267" elapsed="0.066553"/>
 </kw>
 <arg>${wednesdayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.426128" elapsed="0.074216"/>
+<status status="PASS" start="2024-07-29T15:36:00.887741" elapsed="0.067168"/>
 </kw>
 <kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.507448" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:00.961784" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${daysList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.501103" elapsed="0.006563"/>
+<status status="PASS" start="2024-07-29T15:36:00.955739" elapsed="0.006223"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.515318" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:00.969025" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.508317" elapsed="0.007194"/>
+<status status="PASS" start="2024-07-29T15:36:00.962504" elapsed="0.006693"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.516106" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Sunday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:00.969858" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Sunday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.515733" elapsed="0.000489"/>
+<status status="PASS" start="2024-07-29T15:36:00.969441" elapsed="0.000562"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.516965" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Sunday']/preceding-sibling::input' is not selected.</msg>
+<msg time="2024-07-29T15:36:00.970753" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Sunday']/preceding-sibling::input' is not selected.</msg>
 <arg>${inputElement}</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.516712" elapsed="0.020260"/>
+<status status="PASS" start="2024-07-29T15:36:00.970525" elapsed="0.019816"/>
 </kw>
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.516407" elapsed="0.020790"/>
+<status status="PASS" start="2024-07-29T15:36:00.970203" elapsed="0.020340"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.537896" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:00.991286" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.537434" elapsed="0.000621"/>
+<status status="PASS" start="2024-07-29T15:36:00.990734" elapsed="0.000723"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.508122" elapsed="0.030027"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.962329" elapsed="0.029234"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.507819" elapsed="0.030416"/>
+<status status="PASS" start="2024-07-29T15:36:00.962101" elapsed="0.029552"/>
 </for>
 <arg>${sundayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.500714" elapsed="0.037638"/>
+<status status="PASS" start="2024-07-29T15:36:00.955278" elapsed="0.036491"/>
 </kw>
 <kw name="Validate Day of List is Checked" owner="testAutomationPractice">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.545375" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:00.998361" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${daysList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.539088" elapsed="0.006470"/>
+<status status="PASS" start="2024-07-29T15:36:00.992519" elapsed="0.006012"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.551459" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:01.005326" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.546090" elapsed="0.005529"/>
+<status status="PASS" start="2024-07-29T15:36:00.999080" elapsed="0.006433"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.552140" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.006077" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.551825" elapsed="0.000412"/>
+<status status="PASS" start="2024-07-29T15:36:01.005743" elapsed="0.000442"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.552381" elapsed="0.000221"/>
+<status status="PASS" start="2024-07-29T15:36:01.006356" elapsed="0.000231"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.552738" elapsed="0.000262"/>
+<status status="PASS" start="2024-07-29T15:36:01.006731" elapsed="0.000247"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.545928" elapsed="0.007158"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:00.998893" elapsed="0.008173"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.560110" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:01.013811" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.553357" elapsed="0.007012"/>
+<status status="PASS" start="2024-07-29T15:36:01.007355" elapsed="0.006633"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.561193" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.014544" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.560694" elapsed="0.000635"/>
+<status status="PASS" start="2024-07-29T15:36:01.014208" elapsed="0.000430"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.562138" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input' is selected.</msg>
+<msg time="2024-07-29T15:36:01.015297" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Monday']/preceding-sibling::input' is selected.</msg>
 <arg>${inputElement}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.561891" elapsed="0.017191"/>
+<status status="PASS" start="2024-07-29T15:36:01.015074" elapsed="0.046578"/>
 </kw>
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.561553" elapsed="0.017727"/>
+<status status="PASS" start="2024-07-29T15:36:01.014793" elapsed="0.047171"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.579811" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:01.063047" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.579469" elapsed="0.000496"/>
+<status status="PASS" start="2024-07-29T15:36:01.062311" elapsed="0.001106"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.553233" elapsed="0.026822"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.007221" elapsed="0.056435"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.545699" elapsed="0.034440"/>
+<status status="PASS" start="2024-07-29T15:36:00.998668" elapsed="0.065150"/>
 </for>
 <arg>${mondayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.538704" elapsed="0.041539"/>
+<status status="PASS" start="2024-07-29T15:36:00.992142" elapsed="0.071866"/>
 </kw>
 <kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.586069" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:01.072212" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${daysList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.580844" elapsed="0.005415"/>
+<status status="PASS" start="2024-07-29T15:36:01.065436" elapsed="0.006975"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.612481" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:01.083412" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.586802" elapsed="0.025931"/>
+<status status="PASS" start="2024-07-29T15:36:01.073220" elapsed="0.010435"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.613589" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.084252" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.613078" elapsed="0.000679"/>
+<status status="PASS" start="2024-07-29T15:36:01.083905" elapsed="0.000458"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.614010" elapsed="0.000326"/>
+<status status="PASS" start="2024-07-29T15:36:01.084540" elapsed="0.000233"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.614541" elapsed="0.000317"/>
+<status status="PASS" start="2024-07-29T15:36:01.084918" elapsed="0.000273"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.586638" elapsed="0.028320"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.072930" elapsed="0.012382"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.623385" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:01.091551" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.615328" elapsed="0.008244"/>
+<status status="PASS" start="2024-07-29T15:36:01.085610" elapsed="0.006122"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.624671" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.092451" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.623967" elapsed="0.000904"/>
+<status status="PASS" start="2024-07-29T15:36:01.092053" elapsed="0.000556"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.625154" elapsed="0.000420"/>
+<status status="PASS" start="2024-07-29T15:36:01.092873" elapsed="0.000252"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.625814" elapsed="0.000372"/>
+<status status="PASS" start="2024-07-29T15:36:01.093289" elapsed="0.000252"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.615153" elapsed="0.011158"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.085469" elapsed="0.008153"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.635724" level="INFO">${elementText} = Tuesday</msg>
+<msg time="2024-07-29T15:36:01.100400" level="INFO">${elementText} = Tuesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.626779" elapsed="0.009218"/>
+<status status="PASS" start="2024-07-29T15:36:01.093900" elapsed="0.006685"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.636840" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.101185" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.636332" elapsed="0.000674"/>
+<status status="PASS" start="2024-07-29T15:36:01.100825" elapsed="0.000512"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.638074" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input' is not selected.</msg>
+<msg time="2024-07-29T15:36:01.102054" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Tuesday']/preceding-sibling::input' is not selected.</msg>
 <arg>${inputElement}</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.637727" elapsed="0.025185"/>
+<status status="PASS" start="2024-07-29T15:36:01.101829" elapsed="0.019368"/>
 </kw>
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.637265" elapsed="0.025847"/>
+<status status="PASS" start="2024-07-29T15:36:01.101516" elapsed="0.019904"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.663624" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:01.121959" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.663291" elapsed="0.000481"/>
+<status status="PASS" start="2024-07-29T15:36:01.121614" elapsed="0.000500"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.73")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.626560" elapsed="0.037301"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.57")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.093770" elapsed="0.028436"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.586406" elapsed="0.077537"/>
+<status status="PASS" start="2024-07-29T15:36:01.072561" elapsed="0.049728"/>
 </for>
 <arg>${tuesdayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.580505" elapsed="0.083542"/>
+<status status="PASS" start="2024-07-29T15:36:01.064668" elapsed="0.057766"/>
 </kw>
 <kw name="Validate Day of List is Checked" owner="testAutomationPractice">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.673205" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:01.129313" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${daysList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.664754" elapsed="0.008741"/>
+<status status="PASS" start="2024-07-29T15:36:01.123373" elapsed="0.006111"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.682662" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:01.135763" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.674442" elapsed="0.008418"/>
+<status status="PASS" start="2024-07-29T15:36:01.130020" elapsed="0.005919"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.683408" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.136618" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.683084" elapsed="0.000446"/>
+<status status="PASS" start="2024-07-29T15:36:01.136189" elapsed="0.000571"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.683707" elapsed="0.000260"/>
+<status status="PASS" start="2024-07-29T15:36:01.136955" elapsed="0.000355"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.684120" elapsed="0.000247"/>
+<status status="PASS" start="2024-07-29T15:36:01.137559" elapsed="0.000279"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.674132" elapsed="0.010313"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.129846" elapsed="0.008077"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.691599" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:01.144721" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.684711" elapsed="0.007140"/>
+<status status="PASS" start="2024-07-29T15:36:01.138372" elapsed="0.006515"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.692540" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.145447" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.692149" elapsed="0.000501"/>
+<status status="PASS" start="2024-07-29T15:36:01.145106" elapsed="0.000438"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.692843" elapsed="0.000256"/>
+<status status="PASS" start="2024-07-29T15:36:01.145711" elapsed="0.000228"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.693242" elapsed="0.000289"/>
+<status status="PASS" start="2024-07-29T15:36:01.146084" elapsed="0.000247"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.684590" elapsed="0.009063"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.138075" elapsed="0.008338"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.700517" level="INFO">${elementText} = Tuesday</msg>
+<msg time="2024-07-29T15:36:01.152709" level="INFO">${elementText} = Tuesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.694082" elapsed="0.006606"/>
+<status status="PASS" start="2024-07-29T15:36:01.146687" elapsed="0.006204"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.701364" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.153719" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.701014" elapsed="0.000457"/>
+<status status="PASS" start="2024-07-29T15:36:01.153307" elapsed="0.000540"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.701628" elapsed="0.000227"/>
+<status status="PASS" start="2024-07-29T15:36:01.154050" elapsed="0.000239"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.701994" elapsed="0.000238"/>
+<status status="PASS" start="2024-07-29T15:36:01.154446" elapsed="0.000246"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.73")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.693886" elapsed="0.008429"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.57")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.146561" elapsed="0.008213"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.709287" level="INFO">${elementText} = Wednesday</msg>
+<msg time="2024-07-29T15:36:01.160795" level="INFO">${elementText} = Wednesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.702592" elapsed="0.006938"/>
+<status status="PASS" start="2024-07-29T15:36:01.155057" elapsed="0.005905"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.710138" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.161532" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.709761" elapsed="0.000523"/>
+<status status="PASS" start="2024-07-29T15:36:01.161182" elapsed="0.000448"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.710988" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input' is selected.</msg>
+<msg time="2024-07-29T15:36:01.162280" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Wednesday']/preceding-sibling::input' is selected.</msg>
 <arg>${inputElement}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.710764" elapsed="0.016814"/>
+<status status="PASS" start="2024-07-29T15:36:01.162068" elapsed="0.015273"/>
 </kw>
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.710475" elapsed="0.017304"/>
+<status status="PASS" start="2024-07-29T15:36:01.161784" elapsed="0.015743"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.728398" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:01.178076" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.727977" elapsed="0.000572"/>
+<status status="PASS" start="2024-07-29T15:36:01.177742" elapsed="0.000481"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.74")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.702465" elapsed="0.026169"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.58")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.154926" elapsed="0.023386"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.673741" elapsed="0.054975"/>
+<status status="PASS" start="2024-07-29T15:36:01.129619" elapsed="0.048773"/>
 </for>
 <arg>${wednesdayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.664400" elapsed="0.064433"/>
+<status status="PASS" start="2024-07-29T15:36:01.122963" elapsed="0.055539"/>
 </kw>
 <kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.735174" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:01.185436" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${daysList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.729497" elapsed="0.005854"/>
+<status status="PASS" start="2024-07-29T15:36:01.179382" elapsed="0.006233"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.741369" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:01.191814" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.735868" elapsed="0.005688"/>
+<status status="PASS" start="2024-07-29T15:36:01.186151" elapsed="0.005834"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.742116" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.192540" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.741779" elapsed="0.000441"/>
+<status status="PASS" start="2024-07-29T15:36:01.192205" elapsed="0.000440"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.742384" elapsed="0.000229"/>
+<status status="PASS" start="2024-07-29T15:36:01.192810" elapsed="0.000221"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.742765" elapsed="0.000266"/>
+<status status="PASS" start="2024-07-29T15:36:01.193168" elapsed="0.000250"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.735716" elapsed="0.007402"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.185981" elapsed="0.007518"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.749646" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:01.215217" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.743401" elapsed="0.006525"/>
+<status status="PASS" start="2024-07-29T15:36:01.193772" elapsed="0.021724"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.750671" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.216366" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.750254" elapsed="0.000521"/>
+<status status="PASS" start="2024-07-29T15:36:01.215849" elapsed="0.000671"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.750947" elapsed="0.000229"/>
+<status status="PASS" start="2024-07-29T15:36:01.216779" elapsed="0.000352"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.751316" elapsed="0.000291"/>
+<status status="PASS" start="2024-07-29T15:36:01.217384" elapsed="0.000401"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.743269" elapsed="0.008426"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.193643" elapsed="0.024268"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.758509" level="INFO">${elementText} = Tuesday</msg>
+<msg time="2024-07-29T15:36:01.228261" level="INFO">${elementText} = Tuesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.751980" elapsed="0.006760"/>
+<status status="PASS" start="2024-07-29T15:36:01.218387" elapsed="0.010139"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.759532" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.229638" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.759120" elapsed="0.000592"/>
+<status status="PASS" start="2024-07-29T15:36:01.229007" elapsed="0.000817"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.759931" elapsed="0.000337"/>
+<status status="PASS" start="2024-07-29T15:36:01.230119" elapsed="0.000387"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.760498" elapsed="0.000388"/>
+<status status="PASS" start="2024-07-29T15:36:01.230756" elapsed="0.000401"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.73")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.751849" elapsed="0.009155"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.57")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.218148" elapsed="0.013136"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.768194" level="INFO">${elementText} = Wednesday</msg>
+<msg time="2024-07-29T15:36:01.241896" level="INFO">${elementText} = Wednesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.761296" elapsed="0.007072"/>
+<status status="PASS" start="2024-07-29T15:36:01.231727" elapsed="0.010430"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.768912" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.243022" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.768583" elapsed="0.000421"/>
+<status status="PASS" start="2024-07-29T15:36:01.242501" elapsed="0.000702"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.769158" elapsed="0.000219"/>
+<status status="PASS" start="2024-07-29T15:36:01.243429" elapsed="0.000283"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.769515" elapsed="0.000232"/>
+<status status="PASS" start="2024-07-29T15:36:01.243887" elapsed="0.000265"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.74")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.761165" elapsed="0.008660"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.58")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.231512" elapsed="0.012725"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.776532" level="INFO">${elementText} = Thursday</msg>
+<msg time="2024-07-29T15:36:01.251013" level="INFO">${elementText} = Thursday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.770098" elapsed="0.006659"/>
+<status status="PASS" start="2024-07-29T15:36:01.244559" elapsed="0.006648"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.777373" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.251837" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.777044" elapsed="0.000419"/>
+<status status="PASS" start="2024-07-29T15:36:01.251469" elapsed="0.000485"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.778128" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input' is not selected.</msg>
+<msg time="2024-07-29T15:36:01.252673" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Thursday']/preceding-sibling::input' is not selected.</msg>
 <arg>${inputElement}</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.777907" elapsed="0.026778"/>
+<status status="PASS" start="2024-07-29T15:36:01.252444" elapsed="0.020470"/>
 </kw>
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.777623" elapsed="0.027376"/>
+<status status="PASS" start="2024-07-29T15:36:01.252130" elapsed="0.020977"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.805802" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:01.273650" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.805284" elapsed="0.000746"/>
+<status status="PASS" start="2024-07-29T15:36:01.273302" elapsed="0.000504"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.75")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.769969" elapsed="0.036194"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.59")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.244404" elapsed="0.029494"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.735485" elapsed="0.070803"/>
+<status status="PASS" start="2024-07-29T15:36:01.185753" elapsed="0.088227"/>
 </for>
 <arg>${thursdayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.729146" elapsed="0.077310"/>
+<status status="PASS" start="2024-07-29T15:36:01.178933" elapsed="0.095154"/>
 </kw>
 <kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.821856" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:01.280643" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${daysList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.807421" elapsed="0.014700"/>
+<status status="PASS" start="2024-07-29T15:36:01.274769" elapsed="0.006045"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.835400" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:01.288754" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.822943" elapsed="0.012698"/>
+<status status="PASS" start="2024-07-29T15:36:01.281369" elapsed="0.007665"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.836436" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.289960" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.835964" elapsed="0.000621"/>
+<status status="PASS" start="2024-07-29T15:36:01.289423" elapsed="0.000718"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.836828" elapsed="0.000313"/>
+<status status="PASS" start="2024-07-29T15:36:01.290368" elapsed="0.000267"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.837331" elapsed="0.000327"/>
+<status status="PASS" start="2024-07-29T15:36:01.290841" elapsed="0.000385"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.822683" elapsed="0.015094"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.281179" elapsed="0.010157"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.847750" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:01.299307" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.838211" elapsed="0.009818"/>
+<status status="PASS" start="2024-07-29T15:36:01.291711" elapsed="0.007771"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.849115" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.300315" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.848486" elapsed="0.000854"/>
+<status status="PASS" start="2024-07-29T15:36:01.299901" elapsed="0.000546"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.849695" elapsed="0.000491"/>
+<status status="PASS" start="2024-07-29T15:36:01.300693" elapsed="0.000303"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.850490" elapsed="0.000473"/>
+<status status="PASS" start="2024-07-29T15:36:01.301166" elapsed="0.000289"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.838004" elapsed="0.013098"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.291503" elapsed="0.010044"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.858879" level="INFO">${elementText} = Tuesday</msg>
+<msg time="2024-07-29T15:36:01.308002" level="INFO">${elementText} = Tuesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.851579" elapsed="0.007519"/>
+<status status="PASS" start="2024-07-29T15:36:01.301852" elapsed="0.006329"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.859750" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.308729" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.859358" elapsed="0.000530"/>
+<status status="PASS" start="2024-07-29T15:36:01.308403" elapsed="0.000418"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.860076" elapsed="0.000283"/>
+<status status="PASS" start="2024-07-29T15:36:01.308976" elapsed="0.000215"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.860569" elapsed="0.000416"/>
+<status status="PASS" start="2024-07-29T15:36:01.309352" elapsed="0.000243"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.73")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.851338" elapsed="0.009776"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.57")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.301707" elapsed="0.007969"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.877453" level="INFO">${elementText} = Wednesday</msg>
+<msg time="2024-07-29T15:36:01.315370" level="INFO">${elementText} = Wednesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.861493" elapsed="0.016155"/>
+<status status="PASS" start="2024-07-29T15:36:01.309955" elapsed="0.005588"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.878253" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.316093" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.877882" elapsed="0.000480"/>
+<status status="PASS" start="2024-07-29T15:36:01.315759" elapsed="0.000427"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.878535" elapsed="0.000247"/>
+<status status="PASS" start="2024-07-29T15:36:01.316342" elapsed="0.000224"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.878925" elapsed="0.000243"/>
+<status status="PASS" start="2024-07-29T15:36:01.316713" elapsed="0.000237"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.74")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.861328" elapsed="0.017921"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.58")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.309823" elapsed="0.007205"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.886726" level="INFO">${elementText} = Thursday</msg>
+<msg time="2024-07-29T15:36:01.323333" level="INFO">${elementText} = Thursday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.879521" elapsed="0.007430"/>
+<status status="PASS" start="2024-07-29T15:36:01.317332" elapsed="0.006182"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.887649" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.324067" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.887272" elapsed="0.000478"/>
+<status status="PASS" start="2024-07-29T15:36:01.323741" elapsed="0.000420"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.887908" elapsed="0.000224"/>
+<status status="PASS" start="2024-07-29T15:36:01.324323" elapsed="0.000223"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.888272" elapsed="0.000240"/>
+<status status="PASS" start="2024-07-29T15:36:01.324683" elapsed="0.000239"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.75")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.879396" elapsed="0.009194"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.59")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.317176" elapsed="0.007833"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.895514" level="INFO">${elementText} = Friday</msg>
+<msg time="2024-07-29T15:36:01.331730" level="INFO">${elementText} = Friday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.888873" elapsed="0.006835"/>
+<status status="PASS" start="2024-07-29T15:36:01.325302" elapsed="0.006697"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.896260" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.332806" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.895930" elapsed="0.000430"/>
+<status status="PASS" start="2024-07-29T15:36:01.332330" elapsed="0.000625"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.897057" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input' is not selected.</msg>
+<msg time="2024-07-29T15:36:01.334136" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Friday']/preceding-sibling::input' is not selected.</msg>
 <arg>${inputElement}</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.896808" elapsed="0.016593"/>
+<status status="PASS" start="2024-07-29T15:36:01.333800" elapsed="0.016052"/>
 </kw>
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.896514" elapsed="0.017111"/>
+<status status="PASS" start="2024-07-29T15:36:01.333188" elapsed="0.016867"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.914374" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:01.350689" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.913828" elapsed="0.000722"/>
+<status status="PASS" start="2024-07-29T15:36:01.350247" elapsed="0.000599"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.76")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.888733" elapsed="0.025922"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.60")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.325155" elapsed="0.025788"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.822336" elapsed="0.092407"/>
+<status status="PASS" start="2024-07-29T15:36:01.280954" elapsed="0.070072"/>
 </for>
 <arg>${fridayText}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.806876" elapsed="0.107982"/>
+<status status="PASS" start="2024-07-29T15:36:01.274422" elapsed="0.076716"/>
 </kw>
 <kw name="Validate Day of List is Not Checked" owner="testAutomationPractice">
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.921659" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-07-29T15:36:01.370525" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;, &lt;selenium.webdriv...</msg>
 <var>${elements}</var>
 <arg>${daysList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.915688" elapsed="0.006183"/>
+<status status="PASS" start="2024-07-29T15:36:01.351833" elapsed="0.018956"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.929917" level="INFO">${elementText} = Sunday</msg>
+<msg time="2024-07-29T15:36:01.388451" level="INFO">${elementText} = Sunday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.922399" elapsed="0.007765"/>
+<status status="PASS" start="2024-07-29T15:36:01.371603" elapsed="0.017129"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.930741" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.389627" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.930404" elapsed="0.000440"/>
+<status status="PASS" start="2024-07-29T15:36:01.389084" elapsed="0.000715"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.930993" elapsed="0.000225"/>
+<status status="PASS" start="2024-07-29T15:36:01.390055" elapsed="0.000355"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.931360" elapsed="0.000236"/>
+<status status="PASS" start="2024-07-29T15:36:01.390633" elapsed="0.000367"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.71")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.922236" elapsed="0.009441"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.55")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.371343" elapsed="0.019778"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.938220" level="INFO">${elementText} = Monday</msg>
+<msg time="2024-07-29T15:36:01.399614" level="INFO">${elementText} = Monday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.931940" elapsed="0.006453"/>
+<status status="PASS" start="2024-07-29T15:36:01.391546" elapsed="0.008254"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.938917" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.400386" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.938603" elapsed="0.000402"/>
+<status status="PASS" start="2024-07-29T15:36:01.400042" elapsed="0.000445"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.939159" elapsed="0.000366"/>
+<status status="PASS" start="2024-07-29T15:36:01.400657" elapsed="0.000227"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.939687" elapsed="0.000248"/>
+<status status="PASS" start="2024-07-29T15:36:01.401026" elapsed="0.000252"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.72")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.931821" elapsed="0.008202"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.56")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.391346" elapsed="0.010014"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.946799" level="INFO">${elementText} = Tuesday</msg>
+<msg time="2024-07-29T15:36:01.409246" level="INFO">${elementText} = Tuesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.940357" elapsed="0.006617"/>
+<status status="PASS" start="2024-07-29T15:36:01.401643" elapsed="0.007880"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.947521" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.410414" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.947197" elapsed="0.000417"/>
+<status status="PASS" start="2024-07-29T15:36:01.409872" elapsed="0.000709"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.947762" elapsed="0.000222"/>
+<status status="PASS" start="2024-07-29T15:36:01.410873" elapsed="0.000400"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.948119" elapsed="0.000238"/>
+<status status="PASS" start="2024-07-29T15:36:01.411526" elapsed="0.000416"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.73")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.940178" elapsed="0.008265"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.57")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.401505" elapsed="0.010565"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.954400" level="INFO">${elementText} = Wednesday</msg>
+<msg time="2024-07-29T15:36:01.419659" level="INFO">${elementText} = Wednesday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.948746" elapsed="0.005824"/>
+<status status="PASS" start="2024-07-29T15:36:01.412507" elapsed="0.007343"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.955092" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.420393" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.954783" elapsed="0.000395"/>
+<status status="PASS" start="2024-07-29T15:36:01.420077" elapsed="0.000407"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.955326" elapsed="0.000212"/>
+<status status="PASS" start="2024-07-29T15:36:01.420638" elapsed="0.000222"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.955671" elapsed="0.000231"/>
+<status status="PASS" start="2024-07-29T15:36:01.421001" elapsed="0.000249"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.74")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.948594" elapsed="0.007385"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.58")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.412299" elapsed="0.009032"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.963326" level="INFO">${elementText} = Thursday</msg>
+<msg time="2024-07-29T15:36:01.428324" level="INFO">${elementText} = Thursday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.956476" elapsed="0.007040"/>
+<status status="PASS" start="2024-07-29T15:36:01.421741" elapsed="0.006748"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.964075" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.429009" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.963737" elapsed="0.000437"/>
+<status status="PASS" start="2024-07-29T15:36:01.428703" elapsed="0.000393"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.964339" elapsed="0.000232"/>
+<status status="PASS" start="2024-07-29T15:36:01.429257" elapsed="0.000214"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.964714" elapsed="0.000252"/>
+<status status="PASS" start="2024-07-29T15:36:01.429609" elapsed="0.000230"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.75")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.956278" elapsed="0.008767"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.59")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.421571" elapsed="0.008345"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.987876" level="INFO">${elementText} = Friday</msg>
+<msg time="2024-07-29T15:36:01.435888" level="INFO">${elementText} = Friday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.965319" elapsed="0.022825"/>
+<status status="PASS" start="2024-07-29T15:36:01.430191" elapsed="0.005863"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:29.988977" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.436587" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.988485" elapsed="0.000634"/>
+<status status="PASS" start="2024-07-29T15:36:01.436269" elapsed="0.000409"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.989369" elapsed="0.000334"/>
+<status status="PASS" start="2024-07-29T15:36:01.436831" elapsed="0.000208"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.989916" elapsed="0.000377"/>
+<status status="PASS" start="2024-07-29T15:36:01.437174" elapsed="0.000246"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.76")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.965194" elapsed="0.025230"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.60")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.430065" elapsed="0.007433"/>
 </iter>
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:29.999523" level="INFO">${elementText} = Saturday</msg>
+<msg time="2024-07-29T15:36:01.444338" level="INFO">${elementText} = Saturday</msg>
 <var>${elementText}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:29.990898" elapsed="0.008903"/>
+<status status="PASS" start="2024-07-29T15:36:01.437774" elapsed="0.006746"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-07-26T15:53:30.000579" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
+<msg time="2024-07-29T15:36:01.445066" level="INFO">${inputElement} = xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input</msg>
 <var>${inputElement}</var>
 <arg>${daysList}/label[text()='${day}']/preceding-sibling::input</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.000131" elapsed="0.000574"/>
+<status status="PASS" start="2024-07-29T15:36:01.444739" elapsed="0.000421"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:30.001564" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input' is not selected.</msg>
+<msg time="2024-07-29T15:36:01.445821" level="INFO">Verifying checkbox 'xpath=//*[contains(@class, 'post-body')]/div[4]/div/label[text()='Saturday']/preceding-sibling::input' is not selected.</msg>
 <arg>${inputElement}</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.001269" elapsed="0.026570"/>
+<status status="PASS" start="2024-07-29T15:36:01.445610" elapsed="0.016546"/>
 </kw>
 <arg>'${elementText}' == '${day}'</arg>
 <arg>Checkbox Should Not Be Selected</arg>
 <arg>${inputElement}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.000916" elapsed="0.027247"/>
+<status status="PASS" start="2024-07-29T15:36:01.445331" elapsed="0.017032"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2024-07-26T15:53:30.029004" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2024-07-29T15:36:01.462909" level="INFO">Exiting for loop altogether.</msg>
 <arg>'${elementText}' == '${day}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.028458" elapsed="0.000782"/>
+<status status="PASS" start="2024-07-29T15:36:01.462557" elapsed="0.000509"/>
 </kw>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="fa3b70656c31a18a4bc51e57f40c1f4f", element="f.42275676C53AA596275102CD4162D2E1.d.ED78FD0A84E8D5782E302D6136EAC021.e.77")&gt;</var>
-<status status="PASS" start="2024-07-26T15:53:29.990663" elapsed="0.038711"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="13c5d9a2c0ce44b04c5e14edfd78abe3", element="f.86AE3DBB5AAF3EB7C7AADF7A8E254746.d.79D162672EF81917D8A0CAED7538D551.e.61")&gt;</var>
+<status status="PASS" start="2024-07-29T15:36:01.437646" elapsed="0.025513"/>
 </iter>
 <var>${element}</var>
 <value>@{elements}</value>
-<status status="PASS" start="2024-07-26T15:53:29.922014" elapsed="0.107482"/>
+<status status="PASS" start="2024-07-29T15:36:01.370999" elapsed="0.092244"/>
 </for>
 <arg>${saturdayext}</arg>
-<status status="PASS" start="2024-07-26T15:53:29.915276" elapsed="0.114389"/>
+<status status="PASS" start="2024-07-29T15:36:01.351483" elapsed="0.111870"/>
 </kw>
 <kw name="Select Country" owner="testAutomationPractice">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:30.030976" level="INFO">Selecting options from selection list 'id:country' by label Brazil.</msg>
+<msg time="2024-07-29T15:36:01.464240" level="INFO">Selecting options from selection list 'id:country' by label Brazil.</msg>
 <arg>${countryDropdown}</arg>
 <arg>${userCountry}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.030556" elapsed="0.054988"/>
+<status status="PASS" start="2024-07-29T15:36:01.463971" elapsed="0.043942"/>
 </kw>
 <arg>${userCountry}</arg>
-<status status="PASS" start="2024-07-26T15:53:30.030025" elapsed="0.055774"/>
+<status status="PASS" start="2024-07-29T15:36:01.463624" elapsed="0.044576"/>
 </kw>
 <kw name="Select Color" owner="testAutomationPractice">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:30.087070" level="INFO">Selecting options from selection list 'id:colors' by label Green.</msg>
+<msg time="2024-07-29T15:36:01.509509" level="INFO">Selecting options from selection list 'id:colors' by label Green.</msg>
 <arg>${colorsList}</arg>
 <arg>${color}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.086641" elapsed="0.046449"/>
+<status status="PASS" start="2024-07-29T15:36:01.509137" elapsed="0.051089"/>
 </kw>
 <arg>${color}</arg>
-<status status="PASS" start="2024-07-26T15:53:30.086199" elapsed="0.047110"/>
+<status status="PASS" start="2024-07-29T15:36:01.508655" elapsed="0.051795"/>
+</kw>
+<kw name="Select Date on Form" owner="testAutomationPractice">
+<kw name="Select Date" owner="datepicker">
+<kw name="Split String" owner="String">
+<msg time="2024-07-29T15:36:01.562332" level="INFO">${convertedDate} = ['12', '25', '2022']</msg>
+<var>${convertedDate}</var>
+<arg>${date}</arg>
+<arg>/</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.562063" elapsed="0.000502"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.563073" level="INFO">${month} = 12</msg>
+<var>${month}</var>
+<arg>${convertedDate}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.562740" elapsed="0.000484"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.563794" level="INFO">${day} = 25</msg>
+<var>${day}</var>
+<arg>${convertedDate}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.563451" elapsed="0.000475"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.564779" level="INFO">${year} = 2022</msg>
+<var>${year}</var>
+<arg>${convertedDate}[2]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.564368" elapsed="0.000544"/>
+</kw>
+<kw name="Open Datepicker" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.565711" level="INFO">Clicking element 'id:datepicker'.</msg>
+<arg>${dateFieldLocator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.565481" elapsed="0.075048"/>
+</kw>
+<arg>${dateFieldLocator}</arg>
+<status status="PASS" start="2024-07-29T15:36:01.565120" elapsed="0.075647"/>
+</kw>
+<kw name="Navigate To Month Year" owner="datepicker">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.641922" level="INFO">${targetMonth} = December</msg>
+<var>${targetMonth}</var>
+<arg>${monthsMap}[${month}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.641529" elapsed="0.000583"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.642695" level="INFO">${targetYear} = 2022</msg>
+<var>${targetYear}</var>
+<arg>${year}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.642380" elapsed="0.000449"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.643565" level="INFO">${targetMonthIndex} = 12</msg>
+<var>${targetMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${targetMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.643023" elapsed="0.000660"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.662294" level="INFO">${currentMonth} = July</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.644139" elapsed="0.018351"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.673891" level="INFO">${currentYear} = 2024</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.662714" elapsed="0.011363"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.674731" level="INFO">${currentMonthIndex} = 7</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.674298" elapsed="0.000555"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.675059" elapsed="0.000310"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.676579" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.676337" elapsed="0.030997"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:01.675997" elapsed="0.031556"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.675534" elapsed="0.032128"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-07-29T15:36:01.643987" elapsed="0.063762"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.718275" level="INFO">${currentMonth} = June</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.708189" elapsed="0.010263"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.728248" level="INFO">${currentYear} = 2024</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.718667" elapsed="0.009770"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.729067" level="INFO">${currentMonthIndex} = 6</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.728661" elapsed="0.000524"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.729399" elapsed="0.000258"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.730650" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.730440" elapsed="0.024336"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:01.730186" elapsed="0.024817"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.729805" elapsed="0.025291"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-07-29T15:36:01.707966" elapsed="0.047205"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.765954" level="INFO">${currentMonth} = May</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.755534" elapsed="0.010673"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.776230" level="INFO">${currentYear} = 2024</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.766584" elapsed="0.009889"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.777138" level="INFO">${currentMonthIndex} = 5</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.776713" elapsed="0.000564"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.777456" elapsed="0.000256"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.778953" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.778727" elapsed="0.022022"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:01.778447" elapsed="0.022524"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.777985" elapsed="0.023085"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-07-29T15:36:01.755344" elapsed="0.045807"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.810337" level="INFO">${currentMonth} = April</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.801536" elapsed="0.008979"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.820877" level="INFO">${currentYear} = 2024</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.810733" elapsed="0.010312"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.821688" level="INFO">${currentMonthIndex} = 4</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.821274" elapsed="0.000528"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.821966" elapsed="0.000258"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.823195" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.822988" elapsed="0.051410"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:01.822744" elapsed="0.051923"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.822374" elapsed="0.052394"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-07-29T15:36:01.801338" elapsed="0.073525"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.889798" level="INFO">${currentMonth} = March</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.875256" elapsed="0.014827"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.898682" level="INFO">${currentYear} = 2024</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.890325" elapsed="0.008523"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.899467" level="INFO">${currentMonthIndex} = 3</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.899062" elapsed="0.000524"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.899753" elapsed="0.000249"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.901107" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.900895" elapsed="0.023159"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:01.900510" elapsed="0.023789"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.900145" elapsed="0.024262"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-07-29T15:36:01.875055" elapsed="0.049433"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.933834" level="INFO">${currentMonth} = February</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.924892" elapsed="0.009121"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.943094" level="INFO">${currentYear} = 2024</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.934231" elapsed="0.009030"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.943869" level="INFO">${currentMonthIndex} = 2</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.943474" elapsed="0.000505"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.944148" elapsed="0.000246"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.945389" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.945164" elapsed="0.023361"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:01.944908" elapsed="0.023839"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.944539" elapsed="0.024303"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-07-29T15:36:01.924671" elapsed="0.044372"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.979361" level="INFO">${currentMonth} = January</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.969566" elapsed="0.009977"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.989136" level="INFO">${currentYear} = 2024</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.979764" elapsed="0.009562"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:01.989965" level="INFO">${currentMonthIndex} = 1</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.989554" elapsed="0.000529"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.990265" elapsed="0.000290"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:01.991533" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.991327" elapsed="0.021811"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:01.991082" elapsed="0.022290"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:01.990707" elapsed="0.022759"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-07-29T15:36:01.969325" elapsed="0.044218"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.024997" level="INFO">${currentMonth} = December</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.013905" elapsed="0.011284"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.033906" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.025430" elapsed="0.008662"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.034694" level="INFO">${currentMonthIndex} = 12</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.034308" elapsed="0.000502"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.034980" elapsed="0.000249"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.036336" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.036105" elapsed="0.022266"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.035770" elapsed="0.022814"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.035377" elapsed="0.023296"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-07-29T15:36:02.013717" elapsed="0.045030"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.068486" level="INFO">${currentMonth} = November</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.059112" elapsed="0.009558"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.079042" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.068895" elapsed="0.010317"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.079840" level="INFO">${currentMonthIndex} = 11</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.079430" elapsed="0.000527"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.080128" elapsed="0.000249"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.081399" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.081168" elapsed="0.051396"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.080916" elapsed="0.052038"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.080524" elapsed="0.052597"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-07-29T15:36:02.058924" elapsed="0.074340"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.146794" level="INFO">${currentMonth} = October</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.133897" elapsed="0.013089"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.157918" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.147348" elapsed="0.010827"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.159138" level="INFO">${currentMonthIndex} = 10</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.158521" elapsed="0.000782"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.159549" elapsed="0.000369"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.161407" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.161088" elapsed="0.033517"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.160708" elapsed="0.034243"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.160133" elapsed="0.034998"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-07-29T15:36:02.133570" elapsed="0.061685"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.205257" level="INFO">${currentMonth} = September</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.195840" elapsed="0.009622"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.213993" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.205685" elapsed="0.008476"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.214770" level="INFO">${currentMonthIndex} = 9</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.214373" elapsed="0.000516"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.215061" elapsed="0.000253"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.216280" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.216078" elapsed="0.021955"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.215830" elapsed="0.022505"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.215458" elapsed="0.022992"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2024-07-29T15:36:02.195533" elapsed="0.043010"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.248279" level="INFO">${currentMonth} = August</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.238933" elapsed="0.009522"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.259600" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.248667" elapsed="0.011096"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.260451" level="INFO">${currentMonthIndex} = 8</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.260016" elapsed="0.000550"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.260727" elapsed="0.000249"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.261972" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.261759" elapsed="0.022362"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.261513" elapsed="0.022826"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.261117" elapsed="0.023315"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2024-07-29T15:36:02.238732" elapsed="0.045779"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.295610" level="INFO">${currentMonth} = July</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.284884" elapsed="0.010897"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.304082" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.295995" elapsed="0.008253"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.304898" level="INFO">${currentMonthIndex} = 7</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.304462" elapsed="0.000582"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.305244" elapsed="0.000429"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.306805" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.306580" elapsed="0.024553"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.306284" elapsed="0.025092"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.305878" elapsed="0.025601"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2024-07-29T15:36:02.284683" elapsed="0.046876"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.343176" level="INFO">${currentMonth} = June</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.332087" elapsed="0.011260"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.351568" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.343568" elapsed="0.008168"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.352402" level="INFO">${currentMonthIndex} = 6</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.351975" elapsed="0.000540"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.352696" elapsed="0.000263"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.354013" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.353784" elapsed="0.054153"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.353504" elapsed="0.054820"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.353104" elapsed="0.055436"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2024-07-29T15:36:02.331782" elapsed="0.076880"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.422116" level="INFO">${currentMonth} = May</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.409285" elapsed="0.013005"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.431209" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.422549" elapsed="0.008830"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.432003" level="INFO">${currentMonthIndex} = 5</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.431602" elapsed="0.000508"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.432282" elapsed="0.000254"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.433547" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.433330" elapsed="0.021508"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.433065" elapsed="0.021988"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.432688" elapsed="0.022459"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2024-07-29T15:36:02.408951" elapsed="0.046273"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.466171" level="INFO">${currentMonth} = April</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.455597" elapsed="0.010746"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.474722" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.466561" elapsed="0.008328"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.475505" level="INFO">${currentMonthIndex} = 4</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.475105" elapsed="0.000513"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.475791" elapsed="0.000251"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.477010" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.476804" elapsed="0.021011"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.476555" elapsed="0.021474"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.476183" elapsed="0.022023"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2024-07-29T15:36:02.455401" elapsed="0.042937"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.509628" level="INFO">${currentMonth} = March</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.498756" elapsed="0.011046"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.518036" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.510020" elapsed="0.008188"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.518901" level="INFO">${currentMonthIndex} = 3</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.518435" elapsed="0.000605"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.519225" elapsed="0.000297"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.520867" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.520534" elapsed="0.023726"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.520254" elapsed="0.024223"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.519763" elapsed="0.024806"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2024-07-29T15:36:02.498531" elapsed="0.046115"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.554808" level="INFO">${currentMonth} = February</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.545025" elapsed="0.010052"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.563899" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.555387" elapsed="0.008680"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.564671" level="INFO">${currentMonthIndex} = 2</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.564284" elapsed="0.000490"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.564940" elapsed="0.000249"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.566198" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.565986" elapsed="0.025536"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.565730" elapsed="0.026030"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.565352" elapsed="0.026508"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2024-07-29T15:36:02.544826" elapsed="0.047112"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.602860" level="INFO">${currentMonth} = January</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.592370" elapsed="0.010672"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.611882" level="INFO">${currentYear} = 2023</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.603270" elapsed="0.008778"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.612664" level="INFO">${currentMonthIndex} = 1</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.612263" elapsed="0.000502"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.612934" elapsed="0.000248"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click Previous Month Button" owner="datepicker">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.614179" level="INFO">Clicking element 'class=ui-datepicker-prev'.</msg>
+<arg>${previousMonthButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.613969" elapsed="0.023160"/>
+</kw>
+<status status="PASS" start="2024-07-29T15:36:02.613713" elapsed="0.023662"/>
+</kw>
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.613341" elapsed="0.024129"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2024-07-29T15:36:02.592122" elapsed="0.045427"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.667733" level="INFO">${currentMonth} = December</msg>
+<var>${currentMonth}</var>
+<arg>${datePickerMonthText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.637926" elapsed="0.030081"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.683447" level="INFO">${currentYear} = 2022</msg>
+<var>${currentYear}</var>
+<arg>${datePickerYearText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.668610" elapsed="0.015163"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.684745" level="INFO">${currentMonthIndex} = 12</msg>
+<var>${currentMonthIndex}</var>
+<arg>list(${monthsMap}.values()).index('${currentMonth}') + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.684114" elapsed="0.000787"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Exit For Loop" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.685825" level="INFO">Exiting for loop altogether.</msg>
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.685629" elapsed="0.000364"/>
+</kw>
+<arg>('${currentMonth}' == '${targetMonth}') and ('${currentYear}' == '${targetYear}')</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.685148" elapsed="0.000957"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>int(${currentYear}) &gt; int(${targetYear}) or (int(${currentYear}) == int(${targetYear}) and int(${currentMonthIndex}) &gt; int(${targetMonthIndex}))</arg>
+<arg>Click Previous Month Button</arg>
+<arg>ELSE</arg>
+<arg>Click Next Month Button</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2024-07-29T15:36:02.686290" elapsed="0.000111"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2024-07-29T15:36:02.637728" elapsed="0.048789"/>
+</iter>
+<var>${i}</var>
+<value>100</value>
+<status status="PASS" start="2024-07-29T15:36:01.643792" elapsed="1.042844"/>
+</for>
+<arg>${month}</arg>
+<arg>${year}</arg>
+<status status="PASS" start="2024-07-29T15:36:01.641046" elapsed="1.045769"/>
+</kw>
+<kw name="Select Day" owner="datepicker">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-29T15:36:02.687944" level="INFO">${dayLocator} = //a[text()="25"]</msg>
+<var>${dayLocator}</var>
+<arg>//a[text()="${day}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.687567" elapsed="0.000546"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-29T15:36:02.688699" level="INFO">Clicking element '//a[text()="25"]'.</msg>
+<arg>${dayLocator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-29T15:36:02.688348" elapsed="0.036046"/>
+</kw>
+<arg>${day}</arg>
+<status status="PASS" start="2024-07-29T15:36:02.687082" elapsed="0.037658"/>
+</kw>
+<arg>${calendar}</arg>
+<arg>${targetDate}</arg>
+<status status="PASS" start="2024-07-29T15:36:01.561537" elapsed="1.163371"/>
+</kw>
+<arg>${targetDate}</arg>
+<status status="PASS" start="2024-07-29T15:36:01.560861" elapsed="1.164167"/>
 </kw>
 <kw name="Validate Form Links" owner="testAutomationPractice">
 <kw name="Validate Element Link" owner="commonKeywords">
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:30.146806" level="INFO">${link} = https://demo.opencart.com/</msg>
+<msg time="2024-07-29T15:36:02.742817" level="INFO">${link} = https://demo.opencart.com/</msg>
 <var>${link}</var>
 <arg>${locator}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.134487" elapsed="0.012504"/>
+<status status="PASS" start="2024-07-29T15:36:02.726295" elapsed="0.016799"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${link}</arg>
 <arg>${expectedLink}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.147204" elapsed="0.000317"/>
+<status status="PASS" start="2024-07-29T15:36:02.743417" elapsed="0.000454"/>
 </kw>
 <arg>${openCartLink}</arg>
 <arg>https://demo.opencart.com/</arg>
-<status status="PASS" start="2024-07-26T15:53:30.134133" elapsed="0.013507"/>
+<status status="PASS" start="2024-07-29T15:36:02.725832" elapsed="0.018217"/>
 </kw>
 <kw name="Validate Element Link" owner="commonKeywords">
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2024-07-26T15:53:30.158682" level="INFO">${link} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2024-07-29T15:36:02.757397" level="INFO">${link} = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
 <var>${link}</var>
 <arg>${locator}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.148274" elapsed="0.010664"/>
+<status status="PASS" start="2024-07-29T15:36:02.744750" elapsed="0.012831"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${link}</arg>
 <arg>${expectedLink}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.159276" elapsed="0.000435"/>
+<status status="PASS" start="2024-07-29T15:36:02.757800" elapsed="0.000289"/>
 </kw>
 <arg>${orangeHRMLink}</arg>
 <arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
-<status status="PASS" start="2024-07-26T15:53:30.147813" elapsed="0.012081"/>
+<status status="PASS" start="2024-07-29T15:36:02.744308" elapsed="0.013903"/>
 </kw>
-<status status="PASS" start="2024-07-26T15:53:30.133694" elapsed="0.026344"/>
+<status status="PASS" start="2024-07-29T15:36:02.725420" elapsed="0.032878"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-26T15:53:33.160702" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-07-29T15:36:05.759022" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-26T15:53:30.160275" elapsed="3.000984"/>
+<status status="PASS" start="2024-07-29T15:36:02.758604" elapsed="3.000677"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-26T15:53:33.162787" elapsed="0.058599"/>
+<status status="PASS" start="2024-07-29T15:36:05.759684" elapsed="0.059498"/>
 </kw>
-<status status="PASS" start="2024-07-26T15:53:24.325054" elapsed="8.896646"/>
+<status status="PASS" start="2024-07-29T15:35:56.675004" elapsed="9.144632"/>
 </test>
-<status status="PASS" start="2024-07-26T15:53:24.207198" elapsed="9.015122"/>
+<status status="PASS" start="2024-07-29T15:35:56.553931" elapsed="9.266527"/>
 </suite>
 <statistics>
 <total>

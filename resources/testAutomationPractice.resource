@@ -19,6 +19,8 @@ ${maleGenderRadioButton}    id:male
 ${femaleGenderRadioButton}    id:female
 ${countryDropdown}    id:country
 ${colorsList}    id:colors
+### Form locators ###
+${calendar}    id:datepicker
 
 *** Keywords ***
 Fill TAP Form
@@ -69,3 +71,7 @@ Select Color
 Validate Form Links
     Validate Element Link    ${openCartLink}    https://demo.opencart.com/
     Validate Element Link    ${orangeHRMLink}    https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+Select Date on Form
+    [Arguments]    ${targetDate}
+    Select Date    ${calendar}    ${targetDate}
