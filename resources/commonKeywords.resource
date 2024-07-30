@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 Resource    lists.resource
 Resource    datepicker.resource
+Resource    tables.resource
 
 *** Keywords ***
 Open in Chrome Browser

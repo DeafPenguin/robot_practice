@@ -65,6 +65,8 @@ Test Automation Practice using Robot Framework
     Validate Form Links
 
     # Validate Author from given book
+    ${testElement}=    Get Rows by Column Value    ${webTable}    Author
+    Log    ${testElement}
 
     # Validate Subject from given book
 
@@ -77,3 +79,8 @@ Test Automation Practice using Robot Framework
     # Submit form and validate iframe
     Sleep    3s
     [Teardown]    Close Browser
+
+Valid Day selection
+    Given the page is loaded
+    When I select the day "Monday"
+    Then the day "Monday" should be marked as selected

@@ -21,6 +21,9 @@ ${countryDropdown}    id:country
 ${colorsList}    id:colors
 ### Form locators ###
 ${calendar}    id:datepicker
+### Table locators ###
+${webTable}    css:[name="BookTable"]
+${paginationTable}    id:productTable
 
 *** Keywords ***
 Fill TAP Form
@@ -75,3 +78,14 @@ Validate Form Links
 Select Date on Form
     [Arguments]    ${targetDate}
     Select Date    ${calendar}    ${targetDate}
+
+
+### BDD Keywords ###
+Given the page is loaded
+    Open in Chrome Browser    ${url}
+
+When I select the day "${day}"
+    Select Day of List    ${day}
+
+Then the day "${day}" should be marked as selected
+    Validate Day of List is Checked    ${day}
