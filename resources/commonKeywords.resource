@@ -10,6 +10,16 @@ Open in Chrome Browser
     Open Browser    ${address}    chrome
     Maximize Browser Window
 
+Validate Selected Dropdown Option
+    [Arguments]    ${dropdownLocator}    ${expectedOption}
+    ${selectedOption}=    Get Selected List Label    ${dropdownLocator}
+    Should Be Equal    ${selectedOption}    ${expectedOption}
+
+Validate Not Selected Dropdown Option
+    [Arguments]    ${dropdownLocator}    ${expectedOption}
+    ${selectedOption}=    Get Selected List Label    ${dropdownLocator}
+    Should Not Be Equal    ${selectedOption}    ${expectedOption}
+
 Validate Element Link
     [Arguments]    ${locator}    ${expectedLink}
     ${link}=    Get Element Attribute    ${locator}    href

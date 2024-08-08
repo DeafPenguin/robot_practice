@@ -80,7 +80,37 @@ Test Automation Practice using Robot Framework
     Sleep    3s
     [Teardown]    Close Browser
 
-Valid Day selection
-    Given the page is loaded
+Valid Page Load
+    Given Test Automation Practice page is loaded
+    Then The header is visible
+
+Valid Day Selection
+    Given Test Automation Practice page is loaded
     When I select the day "Monday"
-    Then the day "Monday" should be marked as selected
+    And I select the day "Wednesday"
+    Then the day "Sunday" should not be marked as selected
+    And the day "Monday" should be marked as selected
+    And the day "Tuesday" should not be marked as selected
+    And the day "Wednesday" should be marked as selected
+    And the day "Thursday" should not be marked as selected
+    And the day "Friday" should not be marked as selected
+    And the day "Saturday" should not be marked as selected
+
+Valid Country Selection
+    Given Test Automation Practice page is loaded
+    When I select the country "Brazil"
+    Then The country "Brazil" should be marked as selected
+    And The country "United States" should not be marked as selected
+
+Validate Color Selection
+    Given Test Automation Practice page is loaded
+    When I select the following colors:
+        ...    Red
+        ...    Green
+    Then Those following colors should be highlighted:
+        ...    Red
+        ...    Green
+
+Valid Form Links
+    Given Test Automation Practice page is loaded
+    Then the form links should redirect to their respective addresses
